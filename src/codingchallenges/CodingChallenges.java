@@ -29,6 +29,8 @@ public class CodingChallenges {
                 intToFreq.put(i, 0);
             }
         }
+        
+        // Traverses map and finds key with highest frequency
         int mostFrequent = 0;
         int highestFrequency = 0;
         for(Map.Entry<Integer, Integer> entry: intToFreq.entrySet()){
@@ -37,6 +39,15 @@ public class CodingChallenges {
                 highestFrequency = entry.getValue();
             }
         }
+        
+        
+        // Test for integers with the same frequency
+        for(Map.Entry<Integer, Integer> entry: intToFreq.entrySet()){
+            if(entry.getValue() == highestFrequency && entry.getValue() != mostFrequent){
+                return "No distinct highest frequency integer";
+            }
+        }
+        
         return "" + mostFrequent;
     }
     /**
@@ -47,11 +58,6 @@ public class CodingChallenges {
         array.add(1);
         array.add(1);
         array.add(2);
-        array.add(2);
-        array.add(3);
-        array.add(3);
-        array.add(4);
-        array.add(4);
         System.out.println(CodingChallenges.findMostFrequentIntegerIn(array));
     }
     

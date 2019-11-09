@@ -11,6 +11,8 @@ import java.util.*;
  */
 public class CodingChallenges {
     
+    
+    
     /**
      * Finds the most frequent number in an array
      * @param array an array containing integers

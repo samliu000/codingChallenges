@@ -10,8 +10,31 @@ import java.util.*;
  * @author samuelliu
  */
 public class CodingChallenges {
+    /**
+     * Experimenting with Iterator
+     * @param strings iterable list of Strings
+     */
+    public static void iteratorEXP(Iterable<String> strings){
+        Iterator<String> iterator = strings.iterator();
+        while(iterator.hasNext()){
+            System.out.print(iterator.next() + ", ");
+        }
+    }
     
-    
+    /**
+     * Finds sum of Fibonacci sequence up to a number n
+     * @param n finds Fibonacci sequence sum up to this number
+     * @return sum of Fibonacci sequence up to  n
+     */
+    public static int sumFibb(int n){
+        if(n == 0){
+            return 0;
+        } else if(n == 1){
+            return 1;
+        } else{
+            return sumFibb(n-1)+sumFibb(n-2);
+        }
+    }
     
     /**
      * Finds the most frequent number in an array
@@ -61,6 +84,11 @@ public class CodingChallenges {
         array.add(1);
         array.add(2);
         System.out.println(CodingChallenges.findMostFrequentIntegerIn(array));
+        ArrayList<String> arrayOfStrings = new ArrayList<>();
+        arrayOfStrings.add("Hi");
+        arrayOfStrings.add("Hey");
+        arrayOfStrings.add("Hello");
+        iteratorEXP(arrayOfStrings);
     }
     
 }

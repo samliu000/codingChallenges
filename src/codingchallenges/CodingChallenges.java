@@ -16,9 +16,24 @@ public class CodingChallenges {
      */
     public static void iteratorEXP(Iterable<String> strings){
         Iterator<String> iterator = strings.iterator();
+        String hi = "";
         while(iterator.hasNext()){
             System.out.print(iterator.next() + ", ");
         }
+        System.out.println();
+        for(String i: strings){
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+        //How to print without comma at end
+        Iterator<String> newIterator = strings.iterator();
+        while(newIterator.hasNext()){
+            hi += newIterator.next() + ", ";
+        }
+        hi = hi.substring(0, hi.length() - 2);
+        System.out.println(hi);
+        
+        
     }
     
     /**

@@ -11,6 +11,23 @@ import java.util.*;
  */
 public class CodingChallenges {
     /**
+     * Experimenting with try catch
+     * @param numbers array of numbers
+     * @return sum of the array 
+     */
+    public static int sumArray(int[] numbers){
+        int sum = 0;
+        try{
+            for(int i : numbers){
+                sum += sum;
+            }
+            return sum;
+        } catch(NullPointerException e){
+            System.out.println("Argument has null value");
+        }
+        return sum;    
+    }
+    /**
      * Experimenting with Iterator
      * @param strings iterable list of Strings
      */
@@ -104,6 +121,8 @@ public class CodingChallenges {
         arrayOfStrings.add("Hey");
         arrayOfStrings.add("Hello");
         iteratorEXP(arrayOfStrings);
+        int[] numbers = null;
+        sumArray(numbers);
     }
     
 }

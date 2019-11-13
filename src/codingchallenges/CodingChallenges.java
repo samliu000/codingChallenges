@@ -12,17 +12,29 @@ import java.util.*;
 public class CodingChallenges {
     /**
      * Experimenting with try catch
-     * @param numbers array of numbers
-     * @return sum of the array 
+     * @param numbers1 array of numbers
+     * @param numbers2 array of numbers
+     * @return sum of both array 
      */
-    public static int sumArray(int[] numbers){
+    public static int sumArray(int[] numbers1, int[] numbers2){
         int sum = 0;
+        
+        //Checks numbers2 array
+        if(numbers2 == null) {
+            throw new NullPointerException("Argument has null Value");
+        } else{
+            for(int j : numbers2){
+                sum += j;
+            }
+        }
+        
+        //Checks numbers1 array
         try{
-            for(int i : numbers){
+            for(int i : numbers1) {
                 sum += sum;
             }
             return sum;
-        } catch(NullPointerException e){
+        } catch(NullPointerException e) {
             System.out.println("Argument has null value");
         }
         return sum;    
@@ -121,8 +133,9 @@ public class CodingChallenges {
         arrayOfStrings.add("Hey");
         arrayOfStrings.add("Hello");
         iteratorEXP(arrayOfStrings);
-        int[] numbers = null;
-        sumArray(numbers);
+        int[] numbers1 = null;
+        int[] numbers2 = null;
+        sumArray(numbers1, numbers2);
     }
     
 }

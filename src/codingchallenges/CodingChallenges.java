@@ -30,12 +30,14 @@ public class CodingChallenges {
         
         //Checks numbers1 array
         try{
-            for(int i : numbers1) {
-                sum += sum;
+            for(int i = 0; i < numbers1.length; i++) {
+                sum += numbers1[i];
             }
             return sum;
         } catch(NullPointerException e) {
             System.out.println("Argument has null value");
+        } finally{
+            System.out.println("Finally code block has run");
         }
         return sum;    
     }
@@ -134,8 +136,8 @@ public class CodingChallenges {
         arrayOfStrings.add("Hello");
         iteratorEXP(arrayOfStrings);
         int[] numbers1 = null;
-        int[] numbers2 = null;
-        sumArray(numbers1, numbers2);
+        int[] numbers2 = {0,1,2};
+        int sumOfArrays = sumArray(numbers1, numbers2);
+        System.out.println("Sum of arrays is: " + sumOfArrays);
     }
-    
 }

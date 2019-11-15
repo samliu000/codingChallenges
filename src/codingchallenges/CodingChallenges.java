@@ -10,6 +10,20 @@ import java.util.*;
  * @author samuelliu
  */
 public class CodingChallenges {
+    
+    /**
+     * Multiplies two integers without using *
+     * @param a number one
+     * @param b number two
+     * @return product of a and b
+     */
+    public static int specialMultiply(int a, int b) {
+        if(a == 0) {
+            return 0;
+        } else{
+            return b + specialMultiply(a - 1, b);
+        }
+    }
     /**
      * Experimenting with try catch
      * @param numbers1 array of numbers
@@ -139,5 +153,6 @@ public class CodingChallenges {
         int[] numbers2 = {0,1,2};
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
+        System.out.println("Special Multiply Result: " + specialMultiply(4,2));
     }
 }

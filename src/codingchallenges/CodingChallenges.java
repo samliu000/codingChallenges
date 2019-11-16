@@ -10,6 +10,20 @@ import java.util.*;
  * @author samuelliu
  */
 public class CodingChallenges {
+    
+    /**
+     * Multiplies two integers without using *
+     * @param a number one
+     * @param b number two
+     * @return product of a and b
+     */
+    public static int specialMultiply(int a, int b) {
+        if(a == 0) {
+            return 0;
+        } else{
+            return b + specialMultiply(a - 1, b);
+        }
+    }
     /**
      * Throw testing
      */

@@ -6,10 +6,16 @@
 package codingchallenges;
 import java.util.*;
 /**
- *
+ *Class of codingchallenges and a place for practicing my skills
  * @author samuelliu
  */
 public class CodingChallenges {
+    /**
+     * Throw testing
+     */
+    public static void foo() throws Exception{
+        throw new Exception("Hello, exception thrown");
+    }
     /**
      * Experimenting with try catch
      * @param numbers1 array of numbers
@@ -124,7 +130,7 @@ public class CodingChallenges {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         ArrayList<Integer> array = new ArrayList<>();
         array.add(1);
         array.add(1);
@@ -139,5 +145,6 @@ public class CodingChallenges {
         int[] numbers2 = {0,1,2};
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
+        CodingChallenges.foo();
     }
 }

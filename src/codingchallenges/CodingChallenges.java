@@ -10,7 +10,15 @@ import java.util.*;
  * @author samuelliu
  */
 public class CodingChallenges {
-    
+    public static void stringPrompter() throws InvalidStringException{
+        Scanner in = new Scanner(System.in);
+        System.out.print("Please input correct input: ");
+        if(!in.next().equals("correctInput")){
+            throw new InvalidStringException("This is not correctInput");
+        } else{
+            System.out.println("Thank you for inputting correctInput");
+        }
+    }
     /**
      * Multiplies two integers without using *. Does not work for negative numbers
      * @param a number one
@@ -28,7 +36,7 @@ public class CodingChallenges {
      * Throw testing
      */
     public static void foo() throws Exception{
-        throw new Exception("Hello, exception thrown");
+        //throw new Exception("Hello, exception thrown");
     }
     /**
      * Experimenting with try catch
@@ -160,5 +168,6 @@ public class CodingChallenges {
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
         CodingChallenges.foo();
+        stringPrompter();
     }
 }

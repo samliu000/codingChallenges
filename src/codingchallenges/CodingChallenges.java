@@ -12,7 +12,7 @@ import java.util.*;
 public class CodingChallenges {
     
     /**
-     * Multiplies two integers without using *
+     * Multiplies two integers without using *. Does not work for negative numbers
      * @param a number one
      * @param b number two
      * @return product of a and b

@@ -11,6 +11,23 @@ import java.io.*;
  * @author samuelliu
  */
 public class CodingChallenges {
+    /**
+     * Finds square root of a number recursively through a binary search approach
+     * @param n number that we need to find the square root of
+     * @return the square root of n
+     */
+    public static double squareRoot(double n){
+        double lo = 0;
+        double hi = n;
+        double mid = 0.0;
+        for(int i = 0 ; i < 1000 ; i++){
+            mid = (lo+hi)/2;
+            if(mid*mid == n) return mid;
+            if(mid*mid > n) hi = mid;
+            else lo = mid;
+        }
+        return mid;
+    }
     public static void stringPrompter() throws InvalidStringException{
         Scanner in = new Scanner(System.in);
         System.out.print("Please input correct input: ");
@@ -169,6 +186,7 @@ public class CodingChallenges {
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
         CodingChallenges.foo();
-        stringPrompter();
+        //stringPrompter();
+        System.out.println(squareRoot(5));
     }
 }

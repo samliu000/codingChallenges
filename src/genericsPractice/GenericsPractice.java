@@ -45,12 +45,18 @@ public class GenericsPractice<T> {
         test2(monkey);
         test2(mouse);
         
-        //See if all classes work for generic <E extends Primate>
+        //See if all classes work for generic <E extends Grandparent & Rodent>
         test3(oldman);
         test3(mom);
         test3(kid);
         test3(monkey);
         test3(mouse);
         
+        //See if all classes work for generic <E extends Parent & Supraprimate>
+        test4(oldman);
+        test4(mom);
+        test4(kid);
+        test4(monkey);
+        test4(mouse);
     }
 }

@@ -17,11 +17,15 @@ public class CodingChallenges {
      * @return the square root of n
      */
     public static double squareRoot(double n){
-        double lo = 0;
+        double lo = 0.0;
         double hi = n;
         double mid = 0.0;
+        
+        //for loop runs 1000 times to ensure accruacy of the returned square root
         for(int i = 0 ; i < 1000 ; i++){
+            //binary search approach
             mid = (lo+hi)/2;
+            //found result
             if(mid*mid == n) return mid;
             if(mid*mid > n) hi = mid;
             else lo = mid;

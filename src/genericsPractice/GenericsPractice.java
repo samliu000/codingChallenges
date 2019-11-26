@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package genericsPractice;
+import java.util.List;
 
 /**
  *
@@ -15,6 +16,8 @@ public class GenericsPractice<T> {
     public static <T extends Primate> void test2(T var){}
     public static <T extends GrandParent & Rodent> void test3(T var){}
     public static <T extends Parent & Supraprimate> void test4(T var){}
+    public static void test5(List<? super Parent> var){}
+    public static void test6(List<? super Primate> var){}
      
     public static void main(String args[]){
         
@@ -58,5 +61,7 @@ public class GenericsPractice<T> {
         test4(kid);
         test4(monkey);
         test4(mouse);
+        
+        
     }
 }

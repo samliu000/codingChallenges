@@ -5,6 +5,7 @@
  */
 package genericsPractice;
 import java.util.List;
+import java.util.ArrayList;
 
 /**
  *
@@ -20,12 +21,18 @@ public class GenericsPractice<T> {
     public static void test6(List<? super Primate> var){}
      
     public static void main(String args[]){
-        
         GrandParent oldman = new GrandParent();
         Parent mom = new Parent();
         Child kid = new Child();
         Chimpanzee monkey = new Chimpanzee();
         Mouse mouse = new Mouse();
+        
+        List<GrandParent> oldmanList = new ArrayList<>();
+        List<Parent> momList = new ArrayList<>();
+        List<Child> kidList = new ArrayList<>();
+        List<Chimpanzee> monkeyList = new ArrayList<>();
+        List<Mouse> mouseList = new ArrayList<>();
+        
         
         //See if all classes work for generic T
         GenericsPractice practice = new GenericsPractice(oldman);
@@ -61,6 +68,14 @@ public class GenericsPractice<T> {
         test4(kid);
         test4(monkey);
         test4(mouse);
+        
+        //See if all classes work for wildcard <? super Parent>
+        
+        test5(oldmanList);
+        test5(momList);
+        test5(kidList);
+        test5(monkeyList);
+        test5(mouseList);
         
         
     }

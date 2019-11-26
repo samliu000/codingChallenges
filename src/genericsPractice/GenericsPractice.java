@@ -70,13 +70,17 @@ public class GenericsPractice<T> {
         test4(mouse);
         
         //See if all classes work for wildcard <? super Parent>
-        
         test5(oldmanList);
         test5(momList);
         test5(kidList);
         test5(monkeyList);
         test5(mouseList);
         
-        
+        //See if all classes work for wildcard <? super Primate>
+        test6(oldmanList);
+        test6(momList);
+        test6(kidList);
+        test6(monkeyList);
+        test6(mouseList);
     }
 }

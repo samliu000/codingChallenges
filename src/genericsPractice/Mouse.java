@@ -9,6 +9,6 @@ package genericsPractice;
  *
  * @author boo13
  */
-public class Mouse {
-    
+public class Mouse implements Rodent{
+     
 }

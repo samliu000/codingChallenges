@@ -9,6 +9,6 @@ package genericsPractice;
  *
  * @author boo13
  */
-public class Chimpanzee {
+public class Chimpanzee implements Primate{
     
 }

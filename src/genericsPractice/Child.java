@@ -9,6 +9,6 @@ package genericsPractice;
  *
  * @author boo13
  */
-public class Child {
+public class Child extends Parent {
     
 }

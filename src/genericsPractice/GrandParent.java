@@ -9,6 +9,6 @@ package genericsPractice;
  *
  * @author boo13
  */
-public class GrandParent {
+public class GrandParent implements Primate {
     
 }

@@ -9,6 +9,6 @@ package genericsPractice;
  *
  * @author boo13
  */
-public interface Rodent {
+public interface Rodent extends Supraprimate {
     
 }

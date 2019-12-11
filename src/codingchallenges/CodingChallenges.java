@@ -20,6 +20,7 @@ public class CodingChallenges {
         double lo = 0.0;
         double hi = n;
         double mid = 0.0;
+        final double MAXINT = 10000;
         
         //for loop runs 1000 times to ensure accruacy of the returned square root
         for(int i = 0 ; i < 1000 ; i++){

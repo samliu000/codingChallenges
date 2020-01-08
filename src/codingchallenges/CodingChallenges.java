@@ -5,14 +5,45 @@
  */
 package codingchallenges;
 import java.util.*;
+import java.io.*;
 /**
  *Class of codingchallenges and a place for practicing my skills
  * @author samuelliu
  */
 public class CodingChallenges {
-    
     /**
-     * Multiplies two integers without using *
+     * Finds square root of a number recursively through a binary search approach
+     * @param n number that we need to find the square root of
+     * @return the square root of n
+     */
+    public static double squareRoot(double n){
+        double lo = 0.0;
+        double hi = n;
+        double mid = 0.0;
+        final double MAXINT = 10000;
+        
+        //for loop runs 1000 times to ensure accruacy of the returned square root
+        for(int i = 0 ; i < 1000 ; i++){
+            //binary search approach
+            mid = (lo+hi)/2;
+            //found result
+            if(mid*mid == n) return mid;
+            if(mid*mid > n) hi = mid;
+            else lo = mid;
+        }
+        return mid;
+    }
+    public static void stringPrompter() throws InvalidStringException{
+        Scanner in = new Scanner(System.in);
+        System.out.print("Please input correct input: ");
+        if(!in.next().equals("correctInput")){
+            throw new InvalidStringException("This is not correctInput");
+        } else{
+            System.out.println("Thank you for inputting correctInput");
+        }
+    }
+    /**
+     * Multiplies two integers without using *. Does not work for negative numbers
      * @param a number one
      * @param b number two
      * @return product of a and b
@@ -28,7 +59,7 @@ public class CodingChallenges {
      * Throw testing
      */
     public static void foo() throws Exception{
-        throw new Exception("Hello, exception thrown");
+        //throw new Exception("Hello, exception thrown");
     }
     /**
      * Experimenting with try catch
@@ -160,6 +191,11 @@ public class CodingChallenges {
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
         CodingChallenges.foo();
+<<<<<<< HEAD
         System.out.println("Special Multiply Result: " + specialMultiply(4,2));
+=======
+        //stringPrompter();
+        System.out.println(squareRoot(5));
+>>>>>>> 90c82b50d8f318e6a549c128655d2257cd594841
     }
 }

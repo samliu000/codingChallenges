@@ -17,7 +17,5 @@ public class Operations {
         char operator = something.charAt(0);
         String restOfSomething = something.substring(1);
         System.out.println(Double.parseDouble(restOfSomething));
-        
-        
     }
 }

@@ -160,5 +160,6 @@ public class CodingChallenges {
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
         CodingChallenges.foo();
+        System.out.println("Special Multiply Result: " + specialMultiply(4,2));
     }
 }

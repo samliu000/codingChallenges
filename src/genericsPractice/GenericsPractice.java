@@ -42,6 +42,7 @@ public class GenericsPractice<T> {
         practice = new GenericsPractice(mouse);
         
         //See if all classes work for generic <E extends Parent>
+        /*
         test1(oldman);
         test1(mom);
         test1(kid);
@@ -82,5 +83,6 @@ public class GenericsPractice<T> {
         test6(kidList);
         test6(monkeyList);
         test6(mouseList);
+        */
     }
 }

@@ -44,6 +44,7 @@ public class GenericsPractice<T> {
         
         /*
         //See if all classes work for generic <E extends Parent>
+        /*
         test1(oldman);
         test1(mom);
         test1(kid);

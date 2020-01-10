@@ -5,7 +5,6 @@
  */
 package codingchallenges;
 import java.util.*;
-import java.io.*;
 /**
  *Class of codingchallenges and a place for practicing my skills
  * @author samuelliu

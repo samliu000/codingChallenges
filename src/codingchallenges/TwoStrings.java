@@ -15,6 +15,12 @@ public class TwoStrings {
     Given two strings, determine if they share a common substring.
     */
     //TOO SLOW
+    /**
+     * This method determines whether two strings have a common substring
+     * @param s1 first string
+     * @param s2 second string
+     * @return Whether they have a common substring or not
+     */
     public static String twoStrings(String s1, String s2) {
         String shorterString;
         String longerString;
@@ -34,6 +40,12 @@ public class TwoStrings {
     }
     
     //FASTER WAY
+    /**
+     * This method determines whether two strings have a common substring
+     * @param s1 first string
+     * @param s2 second string
+     * @return Whether they have a common substring or not
+     */
     public static String twoStringsFaster(String s1, String s2) {
         for(int i = 97; i < 123; i++){
             if(s1.indexOf((char)i)> -1 && s2.indexOf((char)i)>-1){

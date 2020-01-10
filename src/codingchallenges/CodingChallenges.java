@@ -191,11 +191,8 @@ public class CodingChallenges {
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
         CodingChallenges.foo();
-<<<<<<< HEAD
         System.out.println("Special Multiply Result: " + specialMultiply(4,2));
-=======
         //stringPrompter();
         System.out.println(squareRoot(5));
->>>>>>> 90c82b50d8f318e6a549c128655d2257cd594841
     }
 }

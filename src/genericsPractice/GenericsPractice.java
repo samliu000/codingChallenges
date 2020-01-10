@@ -10,6 +10,7 @@ import java.util.ArrayList;
 /**
  *
  * @author boo13
+ * @param <T>
  */
 public class GenericsPractice<T> {
     public GenericsPractice(T variable){}
@@ -41,6 +42,7 @@ public class GenericsPractice<T> {
         practice = new GenericsPractice(monkey);
         practice = new GenericsPractice(mouse);
         
+        /*
         //See if all classes work for generic <E extends Parent>
         test1(oldman);
         test1(mom);
@@ -82,5 +84,6 @@ public class GenericsPractice<T> {
         test6(kidList);
         test6(monkeyList);
         test6(mouseList);
+        */
     }
 }

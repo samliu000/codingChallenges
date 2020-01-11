@@ -32,6 +32,11 @@ public class CodingChallenges {
         }
         return mid;
     }
+    
+    /**
+     * Prompts the user for string. If the string does not match "correctInput",
+     * Invalid String Exception is thrown.
+     */
     public static void stringPrompter() throws InvalidStringException{
         Scanner in = new Scanner(System.in);
         System.out.print("Please input correct input: ");

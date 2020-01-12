@@ -8,12 +8,15 @@ import java.util.regex.*;
 
 public class MiniMaxSum {
 
-    // Complete the miniMaxSum function below.
+    /**
+     * Finds the min and max of an array
+     * @param arr: array that we need to find min and max of
+     */
     static void miniMaxSum(int[] arr) {
         long sum = 0;
         int min = arr[0];
         int max = arr[0];
-        for(int i = 0; i<arr.length; i++){
+        for(int i = 0; i < arr.length; i++){
             if(min>arr[i])
                 min = arr[i];
             if(max<arr[i])

@@ -7,8 +7,11 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class birthdayCakeCandles {
-
-    // Complete the birthdayCakeCandles function below.
+    /**
+     * Blowing out only tallest candle
+     * @param ar is an array containing the height of the candles
+     * @return the amount of candles blown out
+     */
     public static int birthdayCakeCandles(int[] ar) {
         int max = ar[0];
         int candles = 0;

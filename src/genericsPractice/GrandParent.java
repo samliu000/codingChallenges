@@ -10,8 +10,5 @@ package genericsPractice;
  * @author boo13
  */
 public class GrandParent implements Primate {
-<<<<<<< HEAD
-=======
-    
->>>>>>> b006e99b9c91ce6e2b4319c5685b2428020d58ce
+
 }

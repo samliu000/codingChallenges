@@ -31,7 +31,8 @@ For example, if the string  and , the substring we consider is , the first  char
                 baseCount++;
             }
         }
-
+        
+        //number of occurences of the repeated string or character
         long numOccurences = (n/(newS.length()))*baseCount;
         long remainders = n%(newS.length());
         for(int i = 0; i < remainders; i++){

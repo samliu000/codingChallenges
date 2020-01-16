@@ -14,7 +14,7 @@ import java.util.regex.*;
 
 public class CountingValleys {
 
-    // Complete the countingValleys function below.
+    // Complete the countingValleys function below..
     static int countingValleys(int n, String s) {
         int valley = 0;
         int level = 0;

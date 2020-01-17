@@ -198,5 +198,9 @@ public class CodingChallenges {
         System.out.println("Special Multiply Result: " + specialMultiply(4,2));
         //stringPrompter();
         System.out.println(squareRoot(5));
+        
+        int[] array1 = {2,3,4};
+        int[] array2 = {1};
+        System.out.println("Sum of arrays is: " + sumArray.sumArrays(array1, array2));
     }
 }

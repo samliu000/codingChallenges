@@ -10,6 +10,14 @@ package codingchallenges;
  * @author boo13
  */
 public class sumArray {
+    
+   /**
+    * This method takes in two arrays and adds up the total sum of all numbers
+    * in both array
+    * @param a: first array
+    * @param b: second array
+    * return sum of both arrays
+    */
     public static int sumArrays(int[] a, int[] b) {
         int[] smallerArray;
         int[] biggerArray;

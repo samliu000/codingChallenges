@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- *
+ * This class was made for the purposes of testing inheritances (sub/super classes,
+ * abstract classes, interfaces) and generics (? wildcard and <T>)
  * @author boo13
  * @param <T>
  */

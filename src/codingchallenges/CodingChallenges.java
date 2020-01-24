@@ -12,6 +12,7 @@ import java.util.*;
 public class CodingChallenges {
     /**
      * Finds square root of a number recursively through a binary search approach
+     * Static method
      * @param n number that we need to find the square root of
      * @return the square root of n
      */

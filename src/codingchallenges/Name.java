@@ -16,16 +16,17 @@ public class Name {
     private char initial;
     
     public void setFirst(String name) {
-        first = name;
-        
+        first = name;  
     }
     
     public void setLast(String name) {
         last = name;
     }
+    
     public String getFirst() {
         return first;
     }
+    
     public void giveLastNameTo2(Name child) {
         String firstName = child.getFirst();
         child = new Name();
@@ -35,7 +36,6 @@ public class Name {
     
     public String toString(){
         return "Name: " + first + " " + last;
-        
     }
     
     /**

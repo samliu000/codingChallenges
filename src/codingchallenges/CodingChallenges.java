@@ -5,7 +5,6 @@
  */
 package codingchallenges;
 import java.util.*;
-import java.io.*;
 /**
  *Class of codingchallenges and a place for practicing my skills
  * @author samuelliu
@@ -13,6 +12,7 @@ import java.io.*;
 public class CodingChallenges {
     /**
      * Finds square root of a number recursively through a binary search approach
+     * Static method
      * @param n number that we need to find the square root of
      * @return the square root of n
      */
@@ -33,6 +33,11 @@ public class CodingChallenges {
         }
         return mid;
     }
+    
+    /**
+     * Prompts the user for string. If the string does not match "correctInput",
+     * Invalid String Exception is thrown.
+     */
     public static void stringPrompter() throws InvalidStringException{
         Scanner in = new Scanner(System.in);
         System.out.print("Please input correct input: ");
@@ -191,7 +196,12 @@ public class CodingChallenges {
         int sumOfArrays = sumArray(numbers1, numbers2);
         System.out.println("Sum of arrays is: " + sumOfArrays);
         CodingChallenges.foo();
+        System.out.println("Special Multiply Result: " + specialMultiply(4,2));
         //stringPrompter();
         System.out.println(squareRoot(5));
+        
+        int[] array1 = {2,3,4};
+        int[] array2 = {1};
+        System.out.println("Sum of arrays is: " + sumArray.sumArrays(array1, array2));
     }
 }

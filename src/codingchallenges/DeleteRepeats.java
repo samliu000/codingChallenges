@@ -6,10 +6,15 @@
 package codingchallenges;
 
 /**
- *
+ * Deletes repeats in an array
  * @author samuelliu
  */
 public class DeleteRepeats {
+    /**
+     * Deletes repeats in an array
+     * @param array array that you want to delete repeats from
+     * @return  int array with no repeats
+     */
     public static int[] deleteRepeats(int[] array){
         int previousElement = array[0];
         int[] newArrays = new int[array.length];
